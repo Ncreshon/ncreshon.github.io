@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Nicole's Super Awesome 1st Website</title>  
+        <style>
+            body {
+                background: rgb(10, 10, 10);
+                color: rgb(28, 20, 19);
+                padding: 10px;
+                font-family: tahoma;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            [id=all-contents] {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: rgb(73, 147, 2);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+                border-radius: 7px;
+                border-style: double;
+                
+              
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(137, 66, 155);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(173, 13, 1);
+                display: flex;
+                border-radius: 7px;
+                border-style: double;
+            }
+            [class=sidebar] {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            [class=sidebar] img {
+                width: 200px;
+                border-radius: 8px;
+                border-style: dotted;
+            }
+            [class=content] {
+                flex: 1;
+                padding: 15px;
+            }
+            [class=interests] header {
+                font-size: 1.25em;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="all-contents">
+              <nav>
+                  <ul>
+                      <li><a href="index.html">Home</a> </li>
+                      <li><a href="portfolio.html">Portfolio</a></li>
+                  </ul>
+              </nav>
+              
+              
+              <main>
+                  <div class="sidebar">
+                      <img src="https://i1.wp.com/emeraldcitycomics.com/wp-content/uploads/2015/08/bombshells1.jpg"></img>
+                  </div>
+                  
+                  <div class="content">
+                      <header>Nicole</header>
+                      <p>Hi, welcome to my 1st website. I'm Nicole but feel free to call me Nik; most people do.
+                      I'm a mom of 2 beautiful girls (Christian Sky 7 and Harley Quinn 3 months).
+                      
+                      </p>
+                
+                  <section class="Interests">
+                      <header>Interests</header>
+                      <ul>
+                          <li>Comics and Video Games</li>
+                          <li>Cooking</li>
+                          <li>Singing</li>
+                          <li>Writing</li>
+                          <li>Reading</li>
+                      </ul>
+                  </section>  
+                  </div>
+              </main>
+        </div>
+    </body>
+</html>    
