@@ -141,6 +141,16 @@ function maybeNoises(object){
 }
 
 
+function updateObject(object, k, value) {
+for(var key in object){
+ if(object[key] === k){
+  object[key] = value;
+ } else {
+  object.k = value;
+ }
+}
+return object;
+};
 
 
 
