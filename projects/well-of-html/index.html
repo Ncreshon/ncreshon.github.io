@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/notes/notes.js"></script>
+    <title>A Well of HTML</title>
+    <style type="text/css">
+    .example-form {
+    /* Just to center the form on the page, use: margin: 0 auto;*/
+    margin: 20px;
+    width: 400px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+.example-form div + div {
+    margin-top: 1em;
+}
+
+.example-form label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 90px;
+}
+
+.example-form input,
+.example-form textarea {
+    /* To make sure that all text fields have the same font settings
+    By default, textareas have a monospace font */
+    font: 1em sans-serif;
+    /* To give the same size to all text field */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+}
+
+.example-form input:focus,
+.example-form textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+}
+
+.example-form textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+    /* To give enough room to type some text */
+    height: 5em;
+    /* To allow users to resize any textarea vertically
+    It does not work on every browsers */
+    resize: vertical;
+}
+     table {
+    margin: 20px;
+}
+
+table,
+th,
+td {
+    padding: 4px;
+    border: 1px solid black;
+} 
+
+
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 4px;
+}
+
+
+.example-grid {
+    margin: 20px;
+}
+
+.row-img {
+    margin: 4px;
+}
+    </style>
+</head>
+
+<body>
+
+    <div id="container" class="container">
+        <!-- ALL YOUR MARKUP GOES BELOW HERE -->
+        <div class="flex-row">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+</div>
+
+        <a herf='https://en.wikipedia.org/wiki/Pok%C3%A9mon_Go'> "Pokemon Go"</a>
+        <img src='img/apple-in-grass.jpg'/>
+        <h1>Hello</h1>
+        <h2>I'm doing some stuff on Pokemon Go.</h2>
+        <h3><small>Why?</small></h3>
+        <h4>Because it's such a freaking awesome game.</h4>
+        <h5>So here is a page about Pokemon Go</h5>
+        <h6>I know right, it's pretty dope!</h6>
+        
+       
+       
+        <p><b>Pokemon Go</b> is a free-to-play, location-based augmented reality game developed by Niantic for iOS and Android devices. 
+        The game was the result of a collaboration between Niantic and Nintendo, by way of The Pokemon Company, and was initially 
+        released in selected countries in July 2016. The game utilizes the player's mobile device's GPS ability to locate, capture,
+        battle, and train virtual creatures, called Pokemon, which appear on the screen as if they were at the same real-world location as the player. 
+        The game features a freemium business model and supports in-app purchases for additional in-game items.</p>
+       
+        <p><i>There is actually a PokeStop across the street from <b>Operation Spark</b>.</i> At PokeStops you can get items such as PokeBalls and potions.
+        Potions are used to heal your pokemon after a battle.</p>
+        
+        <ul>
+            <h2>Diffrent Pokemon</h2>
+            <li>Piachu</li>
+            <li>Ponyta</li>
+            <li>Arcanine</li>
+            <li>Bayleef</li>
+        </ul>
+        
+        <ol>
+            <li>Electabuzz</li>
+            <li>Gastly</li>
+            <li>Evee</li>
+            </ol>
+        
+        <dl>
+            <dt>Richu</dt>
+            <dd>is the evolved form of Piachu an electric type pokemon</dd>
+            
+            <dt>Jigglypuff</dt>
+            <dd>is a fairy type pokemon. It has a song that puts it's rivals to sleep.</dd>
+        </dl>
+        
+        <form class="example-form">
+    <div>
+        <label for="username">PokeId:</label>
+        <input type="text" id="name" />
+    </div>
+    <div>
+        <label for="teaml">PokeTeam:</label>
+        <input type="team" id="team" />
+    </div>
+    <div>
+        <label for="msg">Message:</label>
+        <textarea id="msg"></textarea>
+    </div>
+    
+
+    <div class="button">
+        <button type="submit">Send your message</button>
+    </div>
+</form>
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Pokemon</th>
+            <th>PokeType</th>
+            <th>Evolved Form</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td colspan="2">Basic 5 Pokemon</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Bulbasaur</td>
+            <td>Grass</td>
+            <td>Ivysaur</td>
+        </tr>
+        <tr>
+            <td>Charmander</td>
+            <td>Fire</td>
+            <td>Charmeleon</td>
+        </tr>
+        <tr>
+            <td>Squirtle</td>
+            <td>Water</td>
+            <td>Wartortle</td>
+        </tr>
+        <tr>
+           <td>Pikachu</td>
+           <td>Electric</td>
+           <td>Raichu</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class='workout'>
+    <h2><center>PokeWorkout? Yes! Workout!</center></h2>
+    <p>Pokemon Go is a great way to workout while having fun. You hatch eggs to get pokemon by walking. The more you walk
+    the more eggs you hatch. Eggs have a diffrent amount of kilometers needed to hatch. 2km eggs hatch common pokemon. 5km eggs hatch rarer 
+    pokemon. 10km hatch rare pokemon. They are usually the most powerful.</p>
+</div>
+
+<div class='travel'>
+    <h2><center>PokeTravel</center></h2>
+    <p>Diffrent regions have diffrent pokemon. The more you travel the more types of pokemon you can catch.</p>
+</div>
+
+<div class="teams">
+    <h2><center>PokeTeams</center></h2>
+    <img src='img/teams.jpg' />
+    <table>
+    <thead>
+        <tr>
+            <th>Team Name</th>
+            <th>Team Color</th>
+            
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td colspan="2">Teams</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Valor</td>
+            <td>Red</td>
+            
+        </tr>
+        <tr>
+            <td>Mystic</td>
+            <td>Blue</td>
+            
+        </tr>
+        <tr>
+            <td>Instinct</td>
+           <td>Yellow</td>
+            
+        </tr>
+       
+    </tbody>
+</table>
+    
+</div>
+
+<div clas='gyms'>
+    <h2><center>Gyms</center></h2>
+    <img src='img/Pokemon-Go-Gym-01.jpg' />
+    <p> PokeGyms are real life locations that in-game can be controled by a team. To obtain controll of a gym
+    you must defeat the pokemon there to defend it. Once you have defeated their pokemon you can take over the gym. 
+    A gym that has been taken over now refelects your team's color and other members of your team can add to the gym.</p>
+</div>
+
+<div class="raids">
+    <h2><center>Raids</center></h2>
+    <img src='img/pokemon battle.jpg' />
+    <p>Raids are one of the newest additions to Pokemon Go. You can obtain powerful pokemon thru raids.  During a raid you 
+    and a group of your friends defeat the pokemon and then you have a chance to catch it.</p>
+</div>
+
+
+
+   
+   
+   <h3><center><b><i><u>PokeBalls...cause you gotta catch em all</u></b></i></center></h3>
+ <div class="example-grid">
+  <div class="row">
+      <div class="col-md-2"><img src="img/red.jpg" class="row-img"></img>
+      </div>
+      <div class="col-md-10">PokeBalls are used to catch pokemon with lower combat points</div>
+  </div>
+  <div class="row">
+      <div class="col-md-2"><img src="img/blue.jpg" class="row-img"></img>
+      </div>
+      <div class="col-md-10">Greatballs are a high performance ball used to catch pokemon with high combat points!</div>
+  </div>
+  <div class="row">
+      <div class="col-md-2"><img src="img/black.jpg" class="row-img"></img>
+      </div>
+      <div class="col-md-10">Ultraballs are ultra-performance balls used to catch some of the strongest pokemon!</div>
+  </div>
+</div>      
+        
+        <!-- ALL YOUR MARKUP GOES ABOVE HERE -->
+    </div>
+    <script>
+        $(function () {
+            window.opspark.notes.show();
+        });
+    </script>
+</body>
+
+</html>
