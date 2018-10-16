@@ -13,27 +13,35 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
   body {
-      font: 20px;
-       font-family: 'Merienda', cursive
+      font: 22px;
+       font-family: Futura;
       line-height: 1.8;
       color: #f5f6f7;
   }
-  p {font-size: 16px;}
+  p {font-size: 18px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
-    background-color: #a2b9bc; /*Oceana */
+    /* background-color: #a2b9bc; Oceana */
+    background-color: #804157;
       color: #ffffff;
   }
   .bg-2 { 
-    background-color: #b2ad7f; /* Sea Green */
+    /* background-color: #b2ad7f; Sea Green */
+    background-color: #50415A;
       color: #ffffff;
   }
   .bg-3 { 
-    background-color: #878f99; /*Oceana */
-      color: #ffffff;
+      background-color: #322929; /* Black Gray */
+      color: #fff;
   }
   .bg-4 { 
-      background-color: #6b5b95; /* Black Gray */
+    /* background-color: #878f99; Oceana */
+    background-color: #151515;
+      color: #ffffff;
+  }
+
+  .bg-5 { 
+      background-color:  #878f99; /* Black Gray */
       color: #fff;
   }
   .container-fluid {
@@ -48,11 +56,11 @@
       margin-bottom: 0;
       font-size: 12px;
       letter-spacing: 5px;
-      font-family: 'Playfair Display', serif;
-      /* background-color: #4bbcf4; */
+      font-family: SF Distant Galaxy;
+      background-color: #F1DCEA;
   }
   .navbar-nav  li a:hover {
-      color: #1abc9c !important;
+      color: #FFC3D2 !important;
   }
   .centered{
     display: block;
@@ -92,16 +100,17 @@
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center" id="who">
-  <h3 class="margin">Who Am I?</h3>
-  <img src="./img/Nicole2.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Nicole" width="350" height="350">
-  <h3>I'm Nicole Creshon. I'm a software engineer who specializes in front-end development.</h3>
+  <h3 class="margin" style="font-family: SF Distant Galaxy AltOutline;">Who Am I?</h3>
+  <img src="./img/Nik.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Nicole" width="350" height="3502">
+  <p>Hi, I'm Nicole. I'm a software engineer. I'm also an UI/UX enthusiast. I love creating new things.
+  </p>
 </div>
 
 
 
 <!-- Second Container (Grid) -->
 <div class="container-fluid bg-2 text-center" id="team">    
-    <h3 class="margin">Team Projects</h3><br>
+    <h3 class="margin" style="font-family: SF Distant Galaxy AltOutline;">Team Projects</h3><br>
     <div class="row">
       <div class="col-sm-4">
         <h4>Venari</h4>
@@ -128,17 +137,17 @@
   </div>
 
 <!-- Third Container -->
-<div class="container-fluid bg-1 text-center" id="client">
-  <h2 class="margin">Client Sites</h2>
+<div class="container-fluid bg-3 text-center" id="client">
+  <h2 class="margin" style="font-family: SF Distant Galaxy AltOutline;">Client Sites </h2>
   <div class="row text-center" >
     <div class="col-sm-4 text-center">
       <h3>Wolf Era Fitness</h3>
       <a href="http://www.wolferafitness.com" target="_blank"> <img src="./img/wolf.jpg" class="img-responsive margin centered" style="width:60%" alt="Wolf Era Fitness"> </a>
     </div>
     <div class="col-sm-4"> 
-        <h3>Swappr</h3>
+        <h3>Wolf Era Athletics</h3>
       <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
-      <img src="./img/swappr.png" class="img-responsive margin centered"  alt="Image">
+      <a href="http://www.wolferaathletics.com" target="_blank">  <img src="./img/wolf.jpg" class="img-responsive margin centered"  style="width:60%" alt="Wolf Era Athletics"> </a>
     </div>
     <div class="col-sm-4"> 
         <h3>CryptoSpy</h3>
@@ -150,9 +159,15 @@
 
 
 <!-- Third Container -->
-<div class="container-fluid bg-3 text-center" id="client">
-  <h2 class="margin">Client Sites</h2>
-  <div class="row text-center" >
+<div class="container-fluid bg-4 text-center" id="client">
+  <h2 class="margin" style="font-family: SF Distant Galaxy AltOutline;">Passion Projects *</h2>
+  <div class="row text-center" > 
+     <div class="col-sm-4 text-center">
+      <h3>Super Natural Curls</h3>
+      <a href="https://super-natural-curls.herokuapp.com/" target="_blank"> <img src="./img/supernatural.jpg" class="img-responsive margin centered" style="width:60%" alt="Wolf Era Fitness"> </a>
+    </div>
+
+
     <div class="col-sm-4 text-center">
       <h3>Wolf Era Fitness</h3>
       <a href="http://www.wolferafitness.com" target="_blank"> <img src="./img/wolf.jpg" class="img-responsive margin centered" style="width:60%" alt="Wolf Era Fitness"> </a>
@@ -162,11 +177,7 @@
       <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
       <img src="./img/swappr.png" class="img-responsive margin centered"  alt="Image">
     </div>
-    <div class="col-sm-4"> 
-        <h3>CryptoSpy</h3>
-      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
-      <img src="./img/cryptoSpy.jpg" class="img-responsive margin centered" style="width:100%" alt="Image">
-    </div>
+  
   </div>
 </div>
 
@@ -176,13 +187,29 @@
 <!-- <footer class="container-fluid bg-4 text-center">
   <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
 </footer> -->
-<div class="container-fluid bg-4">
-<div class="centered"> 
-    <h3 class="margin">Contact Nicole</h3>
+<div class="container-fluid bg-5 text-center" >
+
+    <h3 class="margin" style="font-family: SF Distant Galaxy AltOutline;">Contact Nicole</h3>
+
+<div class="col-sm-3">   
+<a href="mailto:ncreshon@gmail.com"> <img src="./img/email.png" class="img-responsive margin centered"  alt="email"> </a>
 </div>
-  
- 
-      <div class="row centered">
+
+<div class="col-sm-3"> 
+<a href="https://github.com/Ncreshon" target=_blank> <img src="./img/github.png" class="img-responsive margin centered"  alt="Github"> </a>
+</div>
+
+<div class="col-sm-3"> 
+<a href="https://www.linkedin.com/in/ncreshon" target=_blank> <img src="./img/linkedin.png" class="img-responsive margin centered"  alt="Medium"> </a>
+</div>
+
+<div class="col-sm-3"> 
+<a href="https://medium.com/@ncreshon" target=_blank> <img src="./img/medium.png" class="img-responsive margin centered"  alt="Medium"> </a>
+ </div>
+ <div class="col-sm-3"> 
+    <a href="https://codepen.io/ncreshon/" target=_blank> <img src="./img/codepen.png" class="img-responsive margin centered"  alt="codepen"> </a>
+     </div>
+      <!-- <div class="row centered">
         <div class="col-md-8">
           <form role="form" method="POST" action="https://formspree.io/ncreshon@gmail.com">
             <div class="form-group">
@@ -216,12 +243,19 @@
             </button>
           </form>
         </div>
-      </div>
+      </div> -->
+
+
+
     </div>
 
-    
+    <footer class="container-fluid bg-1 text-center">
+  <p> *Passion projects may not be completed</p> 
+</footer>
 
 
 
-</body>
+
+
+  </body>
 </html>
