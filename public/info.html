@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Nicole Creshon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet"  type="text/css" href="../node_modules/woah.css/woah.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merienda|Playfair+Display" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px;
+       font-family: 'Merienda', cursive
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #a2b9bc; /*Oceana */
+      color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #b2ad7f; /* Sea Green */
+      color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #878f99; /*Oceana */
+      color: #ffffff;
+  }
+  .bg-4 { 
+      background-color: #6b5b95; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+      font-family: 'Playfair Display', serif;
+      /* background-color: #4bbcf4; */
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  .centered{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>  
+        <span class="icon-bar"></span>     
+           
+                           
+      </button>
+      <a class="navbar-brand" href="#">Nicole Creshon</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#who">About Nicole</a></li>
+        <li><a href="#team">Team Projects</a></li>
+        <li><a href="#client">Client Sites</a></li>
+        <li><a href="#passion">Passion Projects</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center" id="who">
+  <h3 class="margin">Who Am I?</h3>
+  <img src="/img/Nicole2.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Nicole" width="350" height="350">
+  <h3>I'm Nicole Creshon. I'm a software engineer who specializes in front-end development.</h3>
+</div>
+
+
+
+<!-- Second Container (Grid) -->
+<div class="container-fluid bg-2 text-center" id="team">    
+    <h3 class="margin">Team Projects</h3><br>
+    <div class="row">
+      <div class="col-sm-4">
+        <h4>Venari</h4>
+        <p>Venari is a progressive web application based photo and geolocation scavenger hunt. Hunters are
+          able to join in quests. Upon quest completion a trophy is added to the user's trophy room.
+        </p>
+        <img src="/img/venariLogo.png" class="img-responsive margin centered" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-4"> 
+          <h4>Swappr</h4>
+        <p>Swappr is a web based social application for trading goods. Swappr allows users to exchange items 
+          and rate the Swap experience
+        </p>
+        <img src="/img/swappr.png" class="img-responsive margin centered"  alt="Image">
+      </div>
+      <div class="col-sm-4"> 
+          <h4>CryptoSpy</h4>
+        <p>A web appliction that allows users to track current cryptocurrency values as well as input 
+          the amount of coins they own to track their current "wallet" value.
+        </thead></p>
+        <img src="/img/cryptoSpy.jpg" class="img-responsive margin centered" style="width:100%" alt="Image">
+      </div>
+    </div>
+  </div>
+
+<!-- Third Container -->
+<div class="container-fluid bg-1 text-center" id="client">
+  <h2 class="margin">Client Sites</h2>
+  <div class="row text-center" >
+    <div class="col-sm-4 text-center">
+      <h3>Wolf Era Fitness</h3>
+      <a href="http://www.wolferafitness.com" target="_blank"> <img src="/img/wolf.jpg" class="img-responsive margin centered" style="width:60%" alt="Wolf Era Fitness"> </a>
+    </div>
+    <div class="col-sm-4"> 
+        <h3>Swappr</h3>
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+      <img src="/img/swappr.png" class="img-responsive margin centered"  alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+        <h3>CryptoSpy</h3>
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+      <img src="/img/cryptoSpy.jpg" class="img-responsive margin centered" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+
+<!-- Third Container -->
+<div class="container-fluid bg-3 text-center" id="client">
+  <h2 class="margin">Client Sites</h2>
+  <div class="row text-center" >
+    <div class="col-sm-4 text-center">
+      <h3>Wolf Era Fitness</h3>
+      <a href="http://www.wolferafitness.com" target="_blank"> <img src="/img/wolf.jpg" class="img-responsive margin centered" style="width:60%" alt="Wolf Era Fitness"> </a>
+    </div>
+    <div class="col-sm-4"> 
+        <h3>Swappr</h3>
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+      <img src="/img/swappr.png" class="img-responsive margin centered"  alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+        <h3>CryptoSpy</h3>
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+      <img src="/img/cryptoSpy.jpg" class="img-responsive margin centered" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<!-- <footer class="container-fluid bg-4 text-center">
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+</footer> -->
+<div class="container-fluid bg-4">
+<div class="centered"> 
+    <h3 class="margin">Contact Nicole</h3>
+</div>
+  
+ 
+      <div class="row centered">
+        <div class="col-md-8">
+          <form role="form" method="POST" action="https://formspree.io/ncreshon@gmail.com">
+            <div class="form-group">
+               
+                <label for="name">
+                  Name
+                </label>
+                <input name="name" type="name" class="form-control" id="exampleInputEmail1" />
+              </div>
+            <div class="form-group">
+               
+              <label for="exampleInputEmail1">
+                Email address
+              </label>
+              <input type="email" name="email" class="form-control" id="exampleInputEmail1" />
+            </div>
+            <div class="form-group">
+               
+              <label for="exampleInputPassword1">
+                Phone Number
+              </label>
+              <input type="tel" name="phone"class="form-control" id="phone" />
+            </div>
+          
+              <div class="form-group">
+              <label for="exampleTextarea">Message</label>
+              <textarea class="form-control" name="message" id="exampleTextarea" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+
+</body>
+</html>
