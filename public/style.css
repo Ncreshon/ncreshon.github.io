@@ -4,6 +4,14 @@ body {
     line-height: 1.8;
     color: #f5f6f7;
 }
+@font-face{
+  font-family: 'SF Distant Galaxy';
+  src: url('./SFDistantGalaxy.ttf')
+}
+@font-face{
+  font-family: 'SF Distant Galaxy AltOutline';
+  src: url('./SFDistantGalaxyAltOutline.ttf')
+}
 p {font-size: 18px;}
 .margin {margin-bottom: 45px;}
 .bg-1 { 
